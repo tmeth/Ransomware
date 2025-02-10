@@ -1,3 +1,99 @@
+:root{
+    --red:rgb(250, 72, 41);
+    --blue:#069efc;
+}
+.heading{ /*static heading when scroll, header styling*/
+    position: fixed;
+    top: 0;
+    width:100%;
+    height:70px;
+    background-color: black;
+    color:var(--red);
+    text-shadow: 2px 2px 2px white;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 5px dashed white;
+  }
+
+h1,h2{
+    line-height: 1.5;
+    font-size: 30px;
+}
+
+h1{ /*center headers*/
+    margin:0 auto;
+  }
+h2{
+    margin-top:40px;
+}
+
+.pic1{
+    padding-top:80px;
+}
+body{ /*1 overview, 3 columns*/
+    display:grid;
+    grid-template-areas: "heading heading" "overview content" "footer footer";
+    grid-template-columns: 1fr 3fr;
+    gap:10px;
+    padding:5px;
+}
+.About{/*about us page*/
+    display:block;
+}
+
+.heading{
+    grid-area:heading;
+}
+main{
+   grid-area:content;
+   margin-left: 20px;
+}
+
+.overview{
+    padding-top:80px;
+    grid-area:overview;
+    position: fixed;
+    top: 0;
+    
+}
+table,tr,td{
+    
+    padding:20px;
+}
+td:hover{
+    background-color:var(--blue)
+}
+footer{
+    text-align:right;
+    grid-area:footer;
+}
+a:hover{
+    color:var(--red);
+}
+a:focus{
+    text-decoration:none;
+}
+input[type="submit"]:hover{
+    background-color:var(--blue)
+    
+}
+input[type="submit"]:active{
+    background-color:var(--red)
+    
+}
+*{ /*global- changes font of everything */
+    font-family:Verdana, Tahoma, sans-serif
+}
 img{
-    box-shadow: 10px 10px blue;
+    box-shadow: 5px 5px 5px 5px rgba(13, 13, 14, 0.279);
+    
+}
+summary{/*about us page*/
+    font-weight: bold;
+    font-size:30px;
+    
+}
+details{/*about us page*/
+    padding:20px;
 }
