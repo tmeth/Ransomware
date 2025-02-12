@@ -24,6 +24,16 @@ h1,h2{
 h1{ /*center headers*/
     margin:0 auto;
   }
+.evolution{/*h1-title on the top*/
+    float:center;
+}
+.about{/*h1-link to about us page*/
+    float:right;
+}
+.link{
+    padding-top: 80px;
+    margin-top: -80px;
+}
 h2{
     margin-top:40px;
 }
