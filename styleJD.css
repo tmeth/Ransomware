@@ -24,9 +24,7 @@ h1,h2{
 h1{ /*center headers*/
     margin:0 auto;
   }
-.evolution{/*h1-title on the top*/
-    float:center;
-}
+
 .about{/*h1-link to about us page*/
     float:right;
 }
@@ -106,4 +104,8 @@ summary{/*about us page*/
 }
 details{/*about us page*/
     padding:20px;
+}
+
+img{
+    transform:rotate(13deg);
 }
