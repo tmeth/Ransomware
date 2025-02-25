@@ -109,3 +109,12 @@ details{/*about us page*/
 img{
     transform:rotate(13deg);
 }
+
+.titleRansom{
+    font-size: 25px;
+    transition-property: font-size;
+    transition-duration:1s;
+}
+.titleRansom:hover{
+    font-size: 32px;
+}
